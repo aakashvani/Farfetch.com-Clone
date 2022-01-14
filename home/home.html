@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farfetch</title>
-</head>
-<body>
-    <h1>Home page</h1>
-</body>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        nav{
+            margin: 0;
+        }
+      #nav {  
+        border: 1px solid red;
+        height: 188px;
+        width: 100%;
+      }
+      #upperDiv{
+        display: flex;
+        padding: 0px 20px 0px 20px;
+          border: 1px solid green;
+          background-color: red;
+
+      }
+      #lowerDiv{
+        display: flex;
+        padding: 0px 20px 0px 20px;
+        border: 1px solid rgb(0, 19, 128);
+      }
+      #lowerDiv input{
+          align-content: flex-end;
+      }
+      .flex{
+          display: flex;
+      }
+      .center{
+          align-items: center;
+          text-align: center;
+      }
+      .leftAlign>div{
+          
+          margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+        <div id="upperDiv">
+          <!--menus like- women,men & kids(nav-bar)-->
+          <div class="leftAlign flex">
+            <div onclick="window.location.href='/women/women.html'">Women</div>
+            <div onclick="window.location.href='/men/men.html'">Men</div>
+            <div onclick="window.location.href='#'">Kids</div>
+          </div>
+
+          <!--website name / home button (nav-bar)-->
+          <div class="center">FARFETCH</div>
+
+          <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
+          <div class="rightAlign flex">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div id="lowerDiv" class="flex">
+          <p>please select a gender to shop</p>
+          <div>
+              <span><input type="text" placeholder="search"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
