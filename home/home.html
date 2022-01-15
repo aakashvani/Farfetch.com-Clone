@@ -4,40 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="home.css" />
     <title>Farfetch</title>
-    <style></style>
-       
   </head>
   <body>
-    <nav>
-      <div id="nav">
-        <div id="upperDiv">
-          <!--menus like- women,men & kids(nav-bar)-->
-          <div class="leftAlign flex">
-            <div onclick="window.location.href='/women/women.html'">Women</div>
-            <div onclick="window.location.href='/men/men.html'">Men</div>
-            <div onclick="window.location.href='#'">Kids</div>
-          </div>
+    <nav class="nav">
+      <div class="container flex">
+        <!--menus like- women,men & kids(nav-bar)-->
+        <ul class="leftmenu flex">
+          <li><a href="/men/men.html">Men</a></li>
+          <li><a href="/women/women.html">Women</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
 
-          <!--website name / home button (nav-bar)-->
-          <div class="center">FARFETCH</div>
+        <!--website name / home button (nav-bar)-->
+        <h1 class="logo"><a href="/home/home.html">FARFETCH</a></h1>
 
-          <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
-          <div class="rightAlign flex">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-
-        <div id="lowerDiv" class="flex">
-          <p>please select a gender to shop</p>
-          <div>
-              <span><input type="text" placeholder="search"></span>
-          </div>
-        </div>
+        <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
+        <ul class="rightmenu flex">
+          <li>
+            <a href="#"><i class="fas fa-flag"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-star"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </ul>
       </div>
+
+      <!-- search-bar option  -->
+      <section class="flex search-bar">
+        <p>Please select a gender to shop</p>
+        <div class="search-bar-section">
+          <input type="text" placeholder="     Search" /><span class="icon"
+            ><i class="fas fa-search"></i
+          ></span>
+        </div>
+      </section>
     </nav>
+
+    <!-- some extra features section like returns,free Shipping & international collections -->
+    <div class="flex features">
+      <p>Free returns with pick-up service</p>
+      <p>Fast Shipping</p>
+      <p>International click & collect</p>
+    </div>
+
+    <!-- banner type clicking section of men and women -->
+    <div class="flex banner">
+      <div onclick="window.location.href='/men/men.html'">
+        <img src="/home/img/MenBanner.jpeg" alt="" />
+      </div>
+      <div onclick="window.location.href='/women/women.html'">
+        <img src="/home/img/WomenBanner.jpeg" alt="" />
+      </div>
+    </div>
+
+    <!-- lists of fashions catagory  -->
+
+    <div class="flex listsOfFashions">
+      <div class="list-Decoration-None">
+        <ul>
+          <li><h4>Featured designers for men</h4></li>
+          <li>Brunello Cucinelli</li>
+          <li>TOM FORD Eyewear</li>
+          <li>Thom Browne</li>
+          <li>visvim</li>
+          <li>Buscemi</li>
+          <li>Raf Simons</li>
+          <li>Axel Arigato</li>
+          <li>Greg Lauren</li>
+        </ul>
+      </div>
+      <div class="list-Decoration-None">
+        <ul>
+          <li><h4>Top categories for men</h4></li>
+          <li>Jordan Low-Tops</li>
+          <li>Off-White T-Shirts</li>
+          <li>Common Projects Shoes</li>
+          <li>Fendi Belts</li>
+          <li>Rick Owens Shoes</li>
+          <li>Brioni Glasses & Frames</li>
+          <li>Versace Shirts</li>
+          <li>Palm Angels Hoodies</li>
+        </ul>
+      </div>
+      <div class="list-Decoration-None">
+        <ul>
+          <li><h4>Featured designers for women</h4></li>
+          <li>Paris Texas</li>
+          <li>Canada Goose</li>
+          <li>Amina Muaddi</li>
+          <li>Self-Portrait</li>
+          <li>Amen</li>
+          <li>MCM</li>
+          <li>Stella McCartney</li>
+          <li>Issey Miyake</li>
+        </ul>
+      </div>
+      <div class="list-Decoration-None">
+        <ul>
+          <li><h4>Top categories for women</h4></li>
+          <li>Gucci Belts</li>
+          <li>ZIMMERMANN Skirts</li>
+          <li>Vivienne Westwood Jewelry</li>
+          <li>Prada Shoulder Bags</li>
+          <li>Jimmy Choo Clutch Bags</li>
+          <li>ZIMMERMANN Blouses</li>
+          <li>Isabel Marant Sneakers</li>
+          <li>GANNI Boots</li>
+        </ul>
+      </div>
+    </div>
+    <div id="viewMore">
+    <button>View more</button>
+  </div>
+
+
+  <!-- -----3 cards - how to shop , FAQ , Need Help -> CSS----- -->
+  
   </body>
 </html>
