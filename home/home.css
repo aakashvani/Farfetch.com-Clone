@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
 
+html{
+  scrollbar-width: normal;
+  scrollbar-color: ;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -117,10 +121,6 @@ h1 .logo a {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  margin: 50px 20px 20px 20px;
-}
-.banner > div {
-  height: 300px;
 }
 /* ************************************************************************************************************************ */
 /* ---some extra features section like returns,free Shipping & international collections --> CSS ---*/
@@ -149,7 +149,7 @@ h1 .logo a {
   justify-content: space-around;
   border: 1px solid red transparent;
   width: 100%;
-  margin-top: 240px;
+  margin-top: 70px;
 }
 .listOfFashions > div > ul {
   list-style-type: none;
