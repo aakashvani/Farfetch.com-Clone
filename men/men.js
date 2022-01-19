@@ -4,6 +4,12 @@ var cartArr =JSON.parse(localStorage.getItem("cartItem")) || [];;
 
 var wishArr =JSON.parse(localStorage.getItem("wishItem")) || [];;
 
+displayData(mensData);
+
+
+
+function displayData(mensData){
+  document.querySelector("#container").innerHTML = "";
 mensData.map(function (data) {
   //main div of product -->
   var div = document.createElement("div");
@@ -66,7 +72,12 @@ mensData.map(function (data) {
 
   document.querySelector("#container").append(div);
 });
+}
 
+
+
+
+//function for addtocart button-->
 function addToCart(data) {
     console.log(data);
     cartArr.push(data);
@@ -74,8 +85,65 @@ function addToCart(data) {
   }
 
 
+
+  // function for wishlist button-->
   function wishlist(data) {
     console.log(data);
     wishArr.push(data);
     localStorage.setItem("wishItem", JSON.stringify(wishArr));
   }
+
+
+
+//sorting to handle price -->
+
+function handlePriceSort(){
+  var selected = document.querySelector("#priceSort").value;
+  // console.log(selected);
+  if (selected == "high"){
+    //descending price 
+    mensData.sort(function(a,b){
+      return b.price - a.price;
+    })
+  }
+  if(selected == "low"){
+    //ascending
+    mensData.sort(function(a,b){
+      return a.price - b.price;
+    })
+
+  }
+  console.log(mensData);
+  displayData(mensData);
+}
+  
+
+
+//filter by Brand Name -->
+
+function filterBrand(){
+  var selected = document.querySelector("#brandFilter").value
+  console.log(selected);
+
+  var filteredList = mensData.filter(function(elem){
+    return elem.brand ==selected;
+  });
+
+  console.log(filteredList);
+  displayData(filteredList)
+}
+
+//filter by Category-->
+function filterCategory(){
+  var selected = document.querySelector("#CategoryFilter").value
+  console.log(selected);
+
+  var filteredList = mensData.filter(function(elem){
+    return elem.category == selected;
+  });
+
+  console.log(filteredList);
+  displayData(filteredList);
+
+}
+
