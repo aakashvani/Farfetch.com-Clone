@@ -1,0 +1,42 @@
+#container{
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mainDiv{
+    border: 1px solid rgb(38, 0, 255);
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    width: 100%;
+}
+#itemsDiv{
+    border: 1px solid rgb(136, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+#itemsDiv img {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#totalDiv{
+    border: 1px solid red;
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* height: 500px; */
+   
+    
+}
+
+#symPrice{
+    display: flex;
+}
