@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cart.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../home/home.css" />
+    <script
+      src="https://kit.fontawesome.com/498dbb26da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="cart.css" />
     <title>Shopping Bag</title>
-</head>
-<body>
-    <h1>Cart page</h1>
-    <div id="container">
-     
-    </div>
-</body>
-<script src="cart.js"></script>
+  </head>
+  <body>
+    <!-- importing nav-bar  -->
+    <div id="nab"></div>
+
+    <!-- Main- content of Cart - Page  -->
+    <main>
+      <h1>SHOPPING BAG</h1>
+      <div id="container">
+        <div class="itemBags"></div>
+        <div class="totalBag">
+          <h2>Summary</h2>
+          <hr />
+          <div id="total">
+            <br />
+            <h3>total</h3>
+          </div>
+          <br>
+          <hr>
+          <br>
+
+          <!-- div for Promo code apply section  -->
+          <div id="discount">
+            <p>Insert your promo code</p>
+            <form>
+                <input type="text" value="" placeholder="Enter Promo Code">
+                <input type="submit" id="promoBtn">
+            </form>
+          </div>
+
+          <!-- btn for Checkout page  -->
+          <button onclick="window.location.href='/Checkout/Checkout.html'">
+            Go To Checkout <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----- importing Get off  form -> ----- -->
+    <div id="getOff"></div>
+
+    <!-- ----- importing Footer  -> ----- -->
+    <div id="foot"></div>
+  </body>
+  <script src="cart.js"></script>
 </html>
+<script type="module" src="../js/navBarIteam.js"></script>
+<script type="module" src="../js/footerIteam.js"></script>
+<script type="module" src="../js/signFormIteam.js"></script>

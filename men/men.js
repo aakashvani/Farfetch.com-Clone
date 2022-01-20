@@ -1,8 +1,8 @@
 var mensData = JSON.parse(localStorage.getItem("mensData"));
 
-var cartArr =JSON.parse(localStorage.getItem("cartItem")) || [];;
+var cartArr =JSON.parse(localStorage.getItem("cartItem")) || [];
 
-var wishArr =JSON.parse(localStorage.getItem("wishItem")) || [];;
+var wishArr =JSON.parse(localStorage.getItem("wishItem")) || [];
 
 displayData(mensData);
 
@@ -132,6 +132,7 @@ function filterBrand(){
   console.log(filteredList);
   displayData(filteredList)
 }
+
 
 //filter by Category-->
 function filterCategory(){
