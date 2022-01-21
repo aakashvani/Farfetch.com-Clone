@@ -44,3 +44,10 @@ body {
     letter-spacing: 7px;
     color: rgb(61, 61, 61);
 }
+#removeBtn{
+  padding: 5px 20px 5px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 5px;
+}

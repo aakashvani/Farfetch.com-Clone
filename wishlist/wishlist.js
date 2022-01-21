@@ -38,10 +38,42 @@ wishArr.map(function (data) {
   strikPri.style.textDecoration = "line-through";
   strikPri.style.color = "grey";
 
+
+  // removing button for wishlist page --->
+  var remove = document.createElement("button");
+  remove.setAttribute("id" ,"removeBtn" )
+  remove.textContent = "Remove";
+  remove.addEventListener("click", function () {
+    cremove(data);
+  });
+  function cremove(product) {
+    var iid = product.price;
+    // console.log(iid);
+    var rl = JSON.parse(localStorage.getItem("wishItem"));
+    console.log(rl);
+    var arr = [];
+    for (key in rl) {
+      if (iid != rl[key].price) {
+        arr.push(rl[key]);
+      }
+      // console.log(rl.price)
+    }
+    console.log(arr);
+    localStorage.setItem("wishItem", JSON.stringify(arr));
+    div.remove();
+    function Refresh() {
+      window.parent.location = window.parent.location.href;
+    }
+    Refresh();
+  }
+
+
+
+  
   div2.append(symPrice, strikPri);
 
   //appending-->
-  div.append(image, brand, name, div2);
+  div.append(image, brand, name, div2,remove);
 
   document.querySelector("#container").append(div);
 });

@@ -37,15 +37,13 @@ cartArr.map(function (data) {
   price.textContent = data.price;
   price.style.color = "red";
 
-
-  // removing array from cartdata 
+  // removing array from cart-data
   var remove = document.createElement("button");
   remove.textContent = "Remove";
   remove.addEventListener("click", function () {
     cremove(data);
   });
   function cremove(product) {
-    
     var iid = product.price;
     // console.log(iid);
     var rl = JSON.parse(localStorage.getItem("cartItem"));
@@ -85,13 +83,15 @@ document.querySelector("h3").textContent = `Total Amount :- ₹ ${total}`;
 console.log(total);
 
 // function for Promo code -->
-document.querySelector("#promoBtn").addEventListener("click", function(event){
+document.querySelector("#promoBtn").addEventListener("click", function (event) {
   event.preventDefault();
   var promoinput = document.querySelector("#promoinput").value;
-  if(promoinput == "masai30"){
-              discount = 0.7*total;
+  if (promoinput == "masai30") {
+    discount = 0.7 * total;
   }
   discount = Math.ceil(discount);
   console.log(discount);
-document.querySelector("#totalPrice").textContent = `Discount Final Price :- ₹ ${discount}`;
+  document.querySelector(
+    "#totalPrice"
+  ).textContent = `Discounted Final Price :- ₹ ${discount}`;
 });

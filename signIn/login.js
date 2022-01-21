@@ -14,9 +14,9 @@ function signin(event) {
     if (regdUsers[i].emailAddress == email && regdUsers[i].password == pass) {
       window.location.href = "/home/home.html";
     }
-    // else{
-    //     alert("Wrong Details")
-    //     return;
-    // }
+    else{
+        alert("User Not Register")
+        return;
+    }
   }
 }
