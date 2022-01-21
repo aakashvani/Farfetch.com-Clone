@@ -11,13 +11,17 @@ function payDebit(event) {
 
   //   console.log(cvv,cardHolderName,cardNumber,expDate);
 
-  if (cvv == "123" || "000" ) {
+  if (cvv == 123 || 000 ) {
     alert("Congratulation! your payment is succesful");
     window.location.href = "/thankyou/thankyou.html";
-  } else if (cvv == "") {
-    alert("Please fill the Card detail");
-  } else {
-    alert("Sorry ! invalid data");
   }
+  else{
+    alert("enter valid data");
+  }
+  //  else if (cvv == "") {
+  //   alert("Please fill the Card detail");
+  // } else {
+  //   alert("Sorry ! invalid data");
+  // }
 
 }
