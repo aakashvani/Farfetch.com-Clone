@@ -130,7 +130,7 @@ function filterBrand(){
   });
 
   console.log(filteredList);
-  displayData(filteredList)
+  displayData(filteredList);
 }
 
 
