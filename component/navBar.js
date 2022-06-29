@@ -9,7 +9,7 @@ function navBar(){
       </ul>
 
       <!--website name / home button (nav-bar)-->
-      <h1 class="logo"><a href="/home/home.html">FARFETCH</a></h1>
+      <h1 class="logo"><a href="../index.html">FARFETCH</a></h1>
 
       <!--icons button like- country,profile,wishlist and cart (nav-bar)-->
       <ul class="rightmenu flex">
