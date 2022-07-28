@@ -4,7 +4,7 @@ function navBar(){
       <!--menus like- women,men & kids(nav-bar)-->
       <ul class="leftmenu flex">
         <li><a href="/men/men.html">Men</a></li>
-        <li><a href="/women/women.html">Women</a></li>
+        <li><a href="./women/Women.html">Women</a></li>
         <li><a href="#">Kids</a></li>
       </ul>
 
