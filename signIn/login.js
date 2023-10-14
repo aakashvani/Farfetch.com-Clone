@@ -1,22 +1,23 @@
 document.querySelector("form").addEventListener("submit", signin);
 
-var regdUsers = JSON.parse(localStorage.getItem("userDataBase"));
+let regdUsers = JSON.parse(localStorage.getItem("userDataBase"));
 console.log(regdUsers);
 
 function signin(event) {
   event.preventDefault();
-  var email = document.querySelector("#email").value;
-  var pass = document.querySelector("#pass").value;
+  let emailInput = document.querySelector("#email");
+  let passInput = document.querySelector("#pass");
+  let email = emailInput.value;
+  let pass = passInput.value;
   // console.log(name, email, pass);
 
-  for (var i = 0; i < regdUsers.length; i++) {
+  for (let i = 0; i < regdUsers.length; i++) {
     console.log(regdUsers[i].emailAddress, regdUsers[i].password);
-    if (regdUsers[i].emailAddress == email && regdUsers[i].password == pass) {
-      window.location.href = "/home/home.html";
-    }
-    else{
-        alert("User Not Register")
-        return;
+    if (regdUsers[i].emailAddress === email && regdUsers[i].password === pass) {
+      window.location.href = "/index.html";
+    } else {
+      alert("User Not Register");
+      return;
     }
   }
 }
